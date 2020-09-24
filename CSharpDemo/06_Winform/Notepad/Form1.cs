@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Notepad
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ShowLoginView();
+        }
+
+        /// <summary>
+        /// 重置按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            ResetLoginView();
+        }
+
+        /// <summary>
+        /// 登录按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if(txt_username.Text.Equals("admin") && txt_password.Text.Equals("admin"))
+            {
+                HideLoginView();
+            }
+            else
+            {
+                MessageBox.Show("用户名获取密码错误");
+                ResetLoginView();
+            }
+        }
+
+        /// <summary>
+        /// 自动换行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_wordwrap_Click(object sender, EventArgs e)
+        {
+            if (txt_content.WordWrap)
+            {
+                btn_wordwrap.Text = "自动换行";
+            }
+            else
+            {
+                btn_wordwrap.Text = "取消自动换行";
+            }
+            txt_content.WordWrap = !txt_content.WordWrap;
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            using(FileStream fs = new FileStream(@"E:\VSProject\CSharpDemo\06_Winform\Notepad\cache.txt", FileMode.OpenOrCreate,FileAccess.Write))
+            {
+                byte[] buffer = Encoding.UTF8.GetBytes(txt_content.Text);
+                fs.Write(buffer, 0, buffer.Length);
+            }
+            MessageBox.Show("保存成功");
+            this.Close();
+        }
+    }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01、自定义DataSet和DataTable", "01、自定义DataSet和DataTable\01、自定义DataSet和DataTable.csproj", "{01FE9C73-E204-414F-9E82-8E4925F9A601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02、插入空值练习", "02、插入空值练习\02、插入空值练习.csproj", "{359F6D4E-D8A1-4A13-9950-9E8014D0E5D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01FE9C73-E204-414F-9E82-8E4925F9A601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FE9C73-E204-414F-9E82-8E4925F9A601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FE9C73-E204-414F-9E82-8E4925F9A601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FE9C73-E204-414F-9E82-8E4925F9A601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359F6D4E-D8A1-4A13-9950-9E8014D0E5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359F6D4E-D8A1-4A13-9950-9E8014D0E5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359F6D4E-D8A1-4A13-9950-9E8014D0E5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359F6D4E-D8A1-4A13-9950-9E8014D0E5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF1D7DFE-F939-4CE2-9A8D-F75CDBD0E9EE}
+	EndGlobalSection
+EndGlobal

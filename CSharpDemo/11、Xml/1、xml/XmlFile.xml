@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Books>
+  <Book>
+    <name>你好</name>
+    <version>1.0.1</version>
+    <price>20</price>
+  </Book>
+  <Book>
+    <name>你解决好</name>
+    <version>1.0.1</version>
+    <price>20</price>
+  </Book>
+  <Book>
+    <name>你你解决好好</name>
+    <version>1.0.1</version>
+    <price>20</price>
+  </Book>
+</Books>
